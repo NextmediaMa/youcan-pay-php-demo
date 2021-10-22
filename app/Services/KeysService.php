@@ -8,16 +8,16 @@ class KeysService
 
     private static function loadKeys(): ?array
     {
-        if (!file_exists(base_path(self::KEYS_FILE))) {
+        if (!file_exists(storage_path(self::KEYS_FILE))) {
             return null;
         }
 
-        return unserialize(file_get_contents(base_path(self::KEYS_FILE))) ?: null;
+        return unserialize(file_get_contents(storage_path(self::KEYS_FILE))) ?: null;
     }
 
     public static function setKeys(string $publicKey, string $privateKey): void
     {
-        file_put_contents(base_path(self::KEYS_FILE), serialize(compact('publicKey', 'privateKey')));
+        file_put_contents(storage_path(self::KEYS_FILE), serialize(compact('publicKey', 'privateKey')));
     }
 
     public static function getPublicKey(): ?string
