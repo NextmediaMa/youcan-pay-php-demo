@@ -1,5 +1,11 @@
 @extends('layout')
 
+@php
+
+    use App\Services\KeysService;
+
+@endphp
+
 @section('content')
     <img src="https://pay.youcan.shop/images/ycpay-logo.svg" alt="YouCan Pay Logo" style="max-height: 100px;">
 
@@ -11,7 +17,7 @@
     <h3>See <a href="https://pay.youcan.shop/docs">YouCan Pay Documentation</a></h3>
 
     <script type="text/javascript">
-        var ycPay = new YCPay('{{ config('ycpay.public_key') }}', {
+        var ycPay = new YCPay('{{ KeysService::getPublicKey() }}', {
             locale: "en"
         });
 
