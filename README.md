@@ -1,74 +1,29 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+![YouCan Pay Logo](https://pay.youcan.shop/images/ycpay-logo.svg "YouCan Pay Logo")
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Description
 
-## About Laravel
+YouCan Pay Laravel/ PHP Demo
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and
-creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in
-many web projects, such as:
+### URLS
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache)
-  storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [https://pay.youcan.shop](https://pay.youcan.shop)
+- [https://pay.youcan.shop/docs](https://pay.youcan.shop/docs)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Requirements
 
-## Learning Laravel
+- If you choose to use Docker, you only need Docker installed on your machine (easiest)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all
-modern web application frameworks, making it a breeze to get started with the framework.
+- If you choose to do a manual setup, you need to have composer and PHP 8.0 installed on your machine as
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video
-tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging
-into our comprehensive video library.
+## Installation
 
-## Laravel Sponsors
+- Docker
+  hub: [https://hub.docker.com/r/youcanshop/youcan-pay-php-demo](https://hub.docker.com/r/youcanshop/youcan-pay-php-demo)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in
-becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Usage
 
-### Premium Partners
+To use YouCan Pay PHP Demo, you need to visit the home page after the installation (http://youcan-pay.demo) where you
+can insert your private and public keys that can be found on the settings page of your YouCan Pay account. Once you do
+that, you will be able to test our standalone and widget integrations.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in
-the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by
-the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell
-via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
