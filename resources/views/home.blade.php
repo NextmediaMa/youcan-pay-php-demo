@@ -303,7 +303,7 @@
         @else
             <div>
                 <div class="footer-container">
-                    <a href="{{ route('widget.show') }}" class="footer-item">Widgets</a>
+                    <a href="{{ route('widget.show') }}" class="footer-item">Widget</a>
                     <a href="{{ route('standalone.show') }}" class="footer-item">Standalone</a>
                 </div>
             </div>
