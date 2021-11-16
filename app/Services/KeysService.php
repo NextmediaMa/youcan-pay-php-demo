@@ -15,7 +15,7 @@ class KeysService
         return unserialize(file_get_contents(storage_path(self::KEYS_FILE))) ?: null;
     }
 
-    public static function setKeys(string $publicKey, string $privateKey): void
+    public static function setKeys(?string $publicKey, ?string $privateKey): void
     {
         file_put_contents(storage_path(self::KEYS_FILE), serialize(compact('publicKey', 'privateKey')));
     }

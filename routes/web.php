@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\SetKeysController;
+use App\Http\Controllers\Standalone;
+use App\Http\Controllers\Widget;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,16 +20,16 @@ Route::view('/', 'home')
     ->name('home');
 
 Route::prefix('widget')->name('widget.')->group(function () {
-    Route::get('/show', \App\Http\Controllers\Widget\ShowFormController::class)
+    Route::get('/show', Widget\ShowFormController::class)
         ->name('show');
-    Route::post('/verify', \App\Http\Controllers\Widget\VerifyPaymentController::class)
+    Route::post('/verify', Widget\VerifyPaymentController::class)
         ->name('verify');
 });
 
 Route::prefix('standalone')->name('standalone.')->group(function () {
-    Route::get('/show', \App\Http\Controllers\Standalone\ShowFormController::class)
+    Route::get('/show', Standalone\ShowFormController::class)
         ->name('show');
-    Route::get('/callback', \App\Http\Controllers\Standalone\CallbackController::class)
+    Route::get('/callback', Standalone\CallbackController::class)
         ->name('callback');
 });
 

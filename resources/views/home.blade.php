@@ -293,14 +293,15 @@
                 </a>
             </div>
         </div>
-        @if(KeysService::keysExist() === false)
-            <form class="form-holder" action="{{ route('set_keys') }}" method="POST">
-                @csrf
-                <input type="text" name="keys[publicKey]" class="input-form" placeholder="Public text">
-                <input type="text" name="keys[privateKey]" class="input-form" placeholder="Private text">
-                <button class="submit-form">Submit</button>
-            </form>
-        @else
+        <form class="form-holder" action="{{ route('set_keys') }}" method="POST">
+            @csrf
+            <input type="text" name="keys[publicKey]" class="input-form" placeholder="Public text"
+                   value="{{ KeysService::getPublicKey() }}">
+            <input type="text" name="keys[privateKey]" class="input-form" placeholder="Private text"
+                   value="{{ KeysService::getPrivateKey() }}">
+            <button class="submit-form">Save</button>
+        </form>
+        @if(KeysService::keysExist())
             <div>
                 <div class="footer-container">
                     <a href="{{ route('widget.show') }}" class="footer-item">Widget</a>
