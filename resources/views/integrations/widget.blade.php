@@ -12,7 +12,20 @@
     <div hidden style="color: red; font-size: larger" id="error"></div>
 
     <div id="payment-card"></div>
-    <button type="button" id="pay">Pay $20</button>
+    <button 
+        style="
+            margin-left: auto;
+            background-color: #3B82F6;
+            color: white;
+            width: fit-content;
+            border: none;
+            padding: 10px 17px;
+            border-radius: 4px;
+            font-weight: normal;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 14px 0;
+        " type="button" id="pay">Pay $20</button>
 
     <h3>See <a href="https://pay.youcan.shop/docs">YouCan Pay Documentation</a></h3>
 
